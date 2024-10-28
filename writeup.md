@@ -25,8 +25,7 @@ The combination of Naive Bayes and gradient boosting forms a stacked ensemble, w
 ### Model evaluation
 Using accuracy as a performance metric, I observed that the ensemble model performed better than Naive Bayes alone, underscoring the value of combining the two models. The confusion matrix for the ensemble model further demonstrated this improvement, particularly for low to mid range ratings, where the model has a slight increase in predictive accuracy.
 
-<img src="./cm-1.png" alt="cm-1" width="300" height="300">
-<img src="./cm-2.png" alt="cm-2" width="300" height="300">
+<img src="./cm-1.png" alt="cm-1" width="300" height="300"> <img src="./cm-2.png" alt="cm-2" width="300" height="300">
 
 left: confusion matrix MultinomialNB; right: confusion matrix for the ensemble model
 
