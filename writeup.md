@@ -27,7 +27,7 @@ Using accuracy as a performance metric, I observed that the ensemble model perfo
 
 <img src="./cm-1.png" alt="cm-1" width="300" height="300"> <img src="./cm-2.png" alt="cm-2" width="300" height="300">
 
-left: confusion matrix MultinomialNB; right: confusion matrix for the ensemble model
+left: confusion matrix for MultinomialNB model; right: confusion matrix for the ensemble model
 
 ### Test set prediction
 To generate final predictions for the test set, I processed it similarly to the training data by vectorizing 'Text' and 'Summary', combining them, and applying the ensemble model. The final predictions were stored in a DataFrame for easy visualization and then saved as a csv file for submission.
