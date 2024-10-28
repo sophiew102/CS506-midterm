@@ -1,10 +1,10 @@
 ## CS506 Midterm Writeup
 ### Introduction
-The goal of this project is to predict star ratings for Amazon movie reviews based on user review IDs and some additional information associated to the user review IDs. In this write-up, I will describe the final model implemented, including techniques that contributed to performance improvements, and key insights gathered throughout the model creating process.
+The goal of this project is to predict star ratings for Amazon movie reviews based on user review IDs and some additional information associated to the user review IDs. In this report, I will describe the final model implemented, including techniques that contributed to performance improvements, and key insights gathered throughout the model creating process.
 ### Dataset and data preprocessing
 The training dataset consists of 1,697,533 rows of unique reviews and 9 columns. Since the training dataset contains rows without the star rating, I divided them into a train set and a test set. The train set are rows from the training dataset that include values from the 'Score', 'Text', and 'Summary' column and the test set are rows without 'Score'. 
 
-To handle missing values in the test set, I filled missing 'Summary' values with an empty string. This allowed for consistent vectorization of text data and prevented issues during preprocessing.
+To handle missing values in the test set, I filled missing 'Summary' and 'Text' values with an empty string. This allowed for consistent vectorization of text data and prevented issues during preprocessing.
 #### Text vectorization
 To extract information from the 'Text' and 'Summary', I used TfidfVectorizer from the scikit-learn library, which is a natural language processing technique for determining the relavancy of each word to the review. The vectorization transform the text data ('Text' and 'Summary') into numerical features by calculating term frequency-inverse document frequency (TF-IDF) values. 
 
